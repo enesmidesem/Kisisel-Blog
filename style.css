@@ -1,0 +1,204 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: #6c757d !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Brand (MEK Blog) için gradient renk tonu */
+.navbar .navbar-brand {
+    color: #5a3cf4; /* Düz mor-mavi ton */
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 1.7rem;
+    transition: color 0.3s;
+}
+.navbar .navbar-brand:hover {
+    color: #0d6efd;
+}
+
+/* Navbar menü yazıları için daha koyu ve belirgin renk */
+.navbar .nav-link {
+    color: #222 !important;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #5a3cf4 !important; /* Brand ile uyumlu hover rengi */
+}
+
+.skill-card {
+    background: white;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 12px;
+    font-weight: 500;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: #e9ecef;
+}
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer a:hover {
+    color: #0d6efd;
+}
+
+/* Anasayfa Tam Ekran */
+#anasayfa {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Arka Plan SVG Deseni */
+#anasayfa::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='white' stroke-width='0.5' opacity='0.1'%3E%3Cpath d='M0 50h20v50H0zM30 0v20h50V0zM50 30h50v20H50zM20 80h30v20H20zM80 50h20v50H80z'/%3E%3Ccircle cx='25' cy='25' r='5'/%3E%3Ccircle cx='75' cy='75' r='5'/%3E%3C/svg%3E");
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    z-index: 1;
+}
+
+#anasayfa .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Splash Ekran */
+.splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0d6efd, #6610f2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    animation: fadeOut 2s ease forwards;
+    animation-delay: 3s;
+}
+
+.splash-text {
+    font-size: 6rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 8px;
+    animation: zoomIn 1.5s ease;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeOut {
+    to { opacity: 0; visibility: hidden; }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .splash-text {
+        font-size: 4rem;
+        letter-spacing: 4px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    #anasayfa {
+        padding: 2rem;
+    }
+
+    #anasayfa::before {
+        background-size: 100px 100px;
+    }
+}
+
+/* Projeyi Görüntüle butonu için mor-mavi karışımı renk */
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:active {
+    background: linear-gradient(135deg, #5a3cf4, #0d6efd);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #4b2fcf, #0a58ca);
+    color: #fff;
+}
+
+/* Tüm başlıklar için navbar ile aynı mor-mavi renk */
+h1, h2, h3, h4, h5, h6 {
+    color: #5a3cf4;
+    font-weight: 700;
+}
+
+.anasayfa-baslik {
+    color: #fff !important;
+}
+
+p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+#iletisim .list-unstyled {
+    font-size: 1.2rem;
+}
+#iletisim .list-unstyled strong {
+    font-size: 1.22rem;
+}
+
+/* Navbar'daki sosyal medya ikonlarını mor yap */
+.navbar .fa-github,
+.navbar .fa-linkedin {
+    color: #5a3cf4 !important;
+    transition: color 0.2s;
+}
+
+.navbar .fa-github:hover,
+.navbar .fa-linkedin:hover {
+    color: #0d6efd !important;
+}

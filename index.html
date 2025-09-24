@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Mustafa Enes Koçaslan'ın kişisel blogu: Bilgisayar Mühendisliği öğrencisi, yazılım tutkunu.">
+    <title>Mustafa Enes Koçaslan | Kişisel Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Splash Ekran -->
+    <div class="splash-screen">
+        <div class="splash-text">MEK Blog</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MEK Blog</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#anasayfa">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hakkimda">Hakkımda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projeler">Projeler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#beceriler">Beceriler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#iletisim">İletişim</a></li>
+                </ul>
+                <ul class="navbar-nav ms-3">
+                    <li class="nav-item">
+                        <a href="https://github.com/enesmidesem" target="_blank" class="nav-link" title="GitHub">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.linkedin.com/in/enes-kocaslan-7221aa331/" target="_blank" class="nav-link"
+                            title="LinkedIn">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Anasayfa Bölümü -->
+    <section id="anasayfa" class="py-5 text-white text-center d-flex align-items-center">
+        <div class="container">
+            <h1 class="anasayfa-baslik">Merhaba, Ben Mustafa Enes KOÇASLAN</h1>
+            <button id="showContent" class="btn btn-light d-block mx-auto"><strong>Daha Fazla Bilgi</strong></button>
+        </div>
+    </section>
+
+    <!-- İçerik Kapsayıcısı -->
+    <div id="mainContent">
+        <!-- Hakkımda Bölümü -->
+        <section id="hakkimda" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Hakkımda</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <img src="enes.jpg" alt="Mustafa Enes Koçaslan Profil Fotoğrafı"
+                            class="img-fluid rounded-circle shadow">
+                    </div>
+                    <div class="col-md-8">
+                        <p>Ben Mustafa Enes Koçaslan, Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği 3.
+                            sınıf öğrencisiyim. Teknolojiye ve yazılıma ilgi duyuyor, bu alanda kendimi geliştirmeye
+                            devam ediyorum.</p>
+                        <p>Küçük yaşlardan itibaren hem arkadaşlarım hem de çevrem sayesinde bilgisayarla erken yaşta
+                            tanıştım.
+                            Elbette küçük bir çocuk olarak oyunlara ilgim vardı; ancak aynı zamanda elektronik aletlerin
+                            içini merak eden, bilgisayar parçalarına ilgi duyan biriydim.
+                            Bu merakım sayesinde bilgisayar mühendisliğini tercih ettim. Her ne kadar ilk tercihim
+                            olmasa da içime sinen bir bölüm seçtiğimi söyleyebilirim.</p>
+                        <p>Yazılım alanında ne yazık ki henüz çok fazla proje geliştirmedim. Ancak temel düzeyde siber
+                            güvenlik, oyun geliştirme ve Full Stack Web Geliştirme konularında bilgi sahibiyim.
+                            Hedefim, kendimi sürekli geliştirerek profesyonel bir yazılımcı olmak ve sektörde yenilikçi
+                            projelere imza atmak istiyorum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- YouTube Videosu -->
+        <section id="video" class="py-5 bg-light">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10"> <!-- Burayı col-md-10 veya col-md-12 yapabilirsin -->
+                        <iframe width="100%" height="550" src="https://www.youtube.com/embed/IYzvtAOeiAA"
+                            title="Tanıtım Videosu" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projeler Bölümü -->
+        <section id="projeler" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Projelerim</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-8 mx-auto mb-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h5 class="card-title">Dosya Transfer Sistemi</h5>
+                                <p class="card-text">Django ile geliştirdiğim bu projede kullanıcılar sisteme kayıt
+                                    olabilir,
+                                    giriş yapabilir ve e-posta aracılığıyla birbirleriyle büyük boyutlu dosyaları
+                                    paylaşabilirler.</p>
+                                <a href="https://eneskocaslan.com.tr" class="btn btn-primary mt-2"
+                                    target="_blank">Projeyi Görüntüle</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Beceriler Bölümü -->
+        <section id="beceriler" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Becerilerim</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-3 mb-3">
+                        <div class="skill-card">Python (Temel)</div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="skill-card">C# (Orta)</div>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <div class="skill-card">Java (Temel)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- İletişim Bölümü -->
+        <section id="iletisim" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">İletişim</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li><strong>İsim:</strong> Mustafa Enes Koçaslan</li>
+                            <li><strong>Okul:</strong> Süleyman Demirel Üniversitesi - Bilgisayar Mühendisliği 3. Sınıf
+                            </li>
+                            <li><strong>E-posta:</strong> eneskocaslann32@gmail.com</li>
+                            <li><strong>Telefon:</strong> 05392721270</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3 bg-dark text-white text-center mt-auto">
+        <div class="container">
+            <p>© 2025 Mustafa Enes Koçaslan - 2316501411</p>
+            <a href="https://github.com/enesmidesem" target="_blank" class="text-white mx-2"><i
+                    class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/enes-kocaslan-7221aa331/" target="_blank" class="text-white mx-2"><i
+                    class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
