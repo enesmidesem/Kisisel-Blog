@@ -1,8 +1,4 @@
-# Frontend Projem
-
-Bu proje [Vercel](https://vercel.com) üzerinde host edilmektedir.
-
-## Canlı Demo
+# Kişisel Blog Projesi
 
 🔗 [Projeyi Görüntüle](https://kisisel-blog-tan.vercel.app/)
 
